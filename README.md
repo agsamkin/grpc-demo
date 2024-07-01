@@ -1,5 +1,7 @@
 # gRPC Demo Project
 
+Проект для демонстрации взаимодействия микросервисов по gRPC. 
+
 ## Data analyzer gRPC microservice
 gRPC сервер.
 - Принимает данные датчиков по gRPC от сервиса "Data generator gRPC microservice" и сохраняет их в базу данных Postgresql.
