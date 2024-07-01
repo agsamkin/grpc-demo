@@ -3,9 +3,13 @@ package com.example.service.impl;
 import com.example.grpc.common.GRPCData;
 import com.example.model.Data;
 import com.example.service.DataService;
+
 import com.google.protobuf.Empty;
+
 import io.grpc.stub.StreamObserver;
+
 import lombok.RequiredArgsConstructor;
+
 import net.devh.boot.grpc.server.service.GrpcService;
 
 import com.example.grpc.common.DataServerGrpc;

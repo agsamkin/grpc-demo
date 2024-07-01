@@ -3,13 +3,16 @@ package com.example.repository.impl;
 import com.example.config.RedisSchema;
 import com.example.model.Data;
 import com.example.model.Summary;
+
 import com.example.repository.SummaryRepository;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Repository;
+
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-import java.util.Locale;
 import java.util.Optional;
 import java.util.Set;
 
@@ -18,7 +21,6 @@ import java.util.Set;
 public class SummaryRepositoryImpl implements SummaryRepository {
 
     private final JedisPool jedisPool;
-
 
     @Override
     public Optional<Summary> findBySensorId(long sensorId, Set<Data.MeasurementType> measurementTypes, Set<Summary.SummaryType> summaryTypes) {

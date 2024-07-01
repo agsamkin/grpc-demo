@@ -2,10 +2,14 @@ package com.example.web.controller;
 
 import com.example.model.Data;
 import com.example.model.Summary;
+
 import com.example.service.SummeryService;
+
 import com.example.web.dto.SummaryDto;
 import com.example.web.mapper.SummeryMapper;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

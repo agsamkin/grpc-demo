@@ -2,6 +2,7 @@ package com.example.web.dto;
 
 import com.example.model.Data;
 import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
