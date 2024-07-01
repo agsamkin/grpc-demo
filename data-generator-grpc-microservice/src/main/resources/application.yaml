@@ -1,0 +1,17 @@
+spring:
+  application:
+    name : data-generator-grpc-microservice
+  config:
+    import: optional:file:.env[.properties]
+
+server:
+  port: 8081
+
+grpc:
+  client:
+    GLOBAL:
+      address: ${GRPC_HOST}
+      negotiation-type: plaintext
+
+push:
+  batch-size: ${GENERATOR_BATCH_SIZE}
